@@ -1,4 +1,6 @@
+Here's the updated README with the Weather App section included:  
 
+```markdown
 # 🚀 Mini JavaScript Projects Repository  
 
 Welcome to my **Mini JavaScript Projects** repository! 🚀  
@@ -66,19 +68,19 @@ A **simple yet powerful task management app** for organizing daily tasks.
 ✅ Minimalist and clean user interface  
 
 ---
-#### 5. 🌦 **Weather App**
-A **weather forecasting app** that fetches your current location and provides real-time weather updates and predictions for upcoming days.
+
+### 5. 🌦 **Weather App**  
+A **weather forecasting app** that fetches your current location and provides real-time weather updates and predictions for upcoming days.  
 
 📁 [Live Demo](https://sohini062003.github.io/JavaScript-MiniProjects/weather_app/)  
 
-
-#### ✨ Features:
-✅ Automatically fetches weather data for your current location using geolocation
-✅ Displays temperature, humidity, wind speed, and conditions
-✅ Forecasts weather for the next few days
-✅ Celsius-to-Fahrenheit toggle with interactive effects
-✅ Loading animation for a smoother user experience
-✅ Responsive and visually appealing UI with a clean, modern design
+#### ✨ Features:  
+✅ Automatically fetches weather data for your current location using geolocation  
+✅ Displays temperature, humidity, wind speed, and conditions  
+✅ Forecasts weather for the next few days  
+✅ Celsius-to-Fahrenheit toggle with interactive effects  
+✅ Loading animation for a smoother user experience  
+✅ Responsive and visually appealing UI with a clean, modern design  
 
 ---
 
@@ -119,7 +121,6 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 ## 🌟 Show Your Support  
 
 If you find this repository helpful, **give it a ⭐ and share it with others!** 🚀  
+```  
 
----
-
-Now your README includes **detailed features** for each project! Let me know if you want any additional modifications! 😊
+Let me know if you'd like further modifications! 😊
