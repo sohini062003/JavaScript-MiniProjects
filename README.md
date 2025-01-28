@@ -67,9 +67,10 @@ A **simple yet powerful task management app** for organizing daily tasks.
 
 ---
 #### 5. 🌦 **Weather App**
-A weather forecasting app that fetches your current location and provides real-time weather updates and predictions for upcoming days.
+A **weather forecasting app** that fetches your current location and provides real-time weather updates and predictions for upcoming days.
 
-📁 Live Demo
+📁 [Live Demo](https://sohini062003.github.io/JavaScript-MiniProjects/weather_app/)  
+
 
 #### ✨ Features:
 ✅ Automatically fetches weather data for your current location using geolocation
