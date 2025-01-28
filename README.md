@@ -1,6 +1,4 @@
-Here's the updated README with the Weather App section included:  
 
-```markdown
 # 🚀 Mini JavaScript Projects Repository  
 
 Welcome to my **Mini JavaScript Projects** repository! 🚀  
@@ -121,6 +119,6 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 ## 🌟 Show Your Support  
 
 If you find this repository helpful, **give it a ⭐ and share it with others!** 🚀  
-```  
 
-Let me know if you'd like further modifications! 😊
+--- 
+ 😊
