@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h3 {
+    color: #4a4a4a;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#input-task {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #9face6;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#input-task:focus {
+    border-color: #74ebd5;
+}
+
+#add {
+    background-color: #74ebd5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add:hover {
+    background-color: #9face6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    cursor: pointer;
+    background: #f8f8f8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #c9cfe7;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: rgb(63, 62, 62);
+}
+
+li button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li button:hover {
+    background-color: #ed3939;
+}

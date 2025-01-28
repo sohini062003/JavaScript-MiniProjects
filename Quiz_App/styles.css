@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(135deg, #1c1c1c, #434343);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+#quiz-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00f2fe;
+}
+
+#start, #restart, #next {
+    width: 50%;
+    margin-left:28%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start:hover, #restart:hover, #next:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.4);
+}
+
+.hidden {
+    display: none !important;
+}
+
+#question {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00f2fe;
+}
+
+#choices button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #231d1d;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#choices button:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 242, 254, 0.4);
+}
+
+#showres {
+    font-size: 1.8rem;
+}
+
+.text-success {
+    color: #4caf50 !important;
+}
+
+.text-danger {
+    color: #ff5252 !important;
+}
+
+#score {
+    font-size: 1.5rem;
+    color: #00f2fe;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
