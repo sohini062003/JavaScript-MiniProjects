@@ -66,6 +66,20 @@ A **simple yet powerful task management app** for organizing daily tasks.
 ✅ Minimalist and clean user interface  
 
 ---
+#### 5. 🌦 **Weather App**
+A weather forecasting app that fetches your current location and provides real-time weather updates and predictions for upcoming days.
+
+📁 Live Demo
+
+#### ✨ Features:
+✅ Automatically fetches weather data for your current location using geolocation
+✅ Displays temperature, humidity, wind speed, and conditions
+✅ Forecasts weather for the next few days
+✅ Celsius-to-Fahrenheit toggle with interactive effects
+✅ Loading animation for a smoother user experience
+✅ Responsive and visually appealing UI with a clean, modern design
+
+---
 
 ## 🛠 Technologies Used  
 
