@@ -1,0 +1,382 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(41, 40, 40, 0.8); /* Darker background for better contrast */
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box; /* Ensure consistent padding */
+    height:70px;
+}
+
+/* Logo */
+.navbar .logo h2 {
+    margin: 0;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #33A1FF;
+}
+
+
+/* Search Bar */
+.navbar .search-bar {
+    display: flex;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    background: #2f3640; /* Dark background for the search box */
+    border-radius: 50px;
+    position: relative;
+    padding: 10px;
+    margin-right: 20px;
+    height:10px;
+  }
+  
+  /* Search Input */
+  #city-input {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 12px 46px 12px 26px;
+    width: 100%;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Search Button */
+  #city-input-btn {
+    color: white;
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    cursor: pointer;
+  }
+  
+  /* Hover Effect */
+  #city-input-btn:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+  }
+  
+  /* Button Pressing Effect */
+  #city-input-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  /* Input Focus Effect */
+  #city-input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+
+.navbar #city-input {
+    width: 250px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar #city-input::placeholder {
+    color: #ddd;
+}
+
+.navbar #city-input-btn {
+    padding: 8px 12px;
+    background-color: #2193b0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar #city-input-btn:hover {
+    background-color: #33A1FF;
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Background Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    z-index: -1;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin-top: 130px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar .search-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar #city-input {
+        width: 200px;
+    }
+}
+
+
+/* Search Card */
+.search-card {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.unit-toggle {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.unit-toggle span {
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.3s;
+}
+
+.unit-toggle span:hover {
+    color: #ffb600;
+}
+
+.unit-toggle .active {
+    font-weight: bold;
+    color: #33A1FF;
+}
+#city-input {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#city-input::placeholder {
+    color: #ddd;
+}
+
+#city-input-btn {
+    padding: 10px 15px;
+    background-color: rgba(33, 147, 176, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#city-input-btn:hover {
+    background-color: rgba(33, 147, 176, 1);
+}
+.weather-card-container{
+    background: rgba(51, 37, 37, 0.265); /* Light container for weather details */
+   
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+    margin-top:600px;
+    height:fit-content;
+    width:fit-content;
+    gap:30px;
+}
+
+/* Weather Card */
+.weather-card {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8); /* Glow effect for better readability */
+}
+
+#date {
+    font-size: 18px;
+    color: #cedadd;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 64px;
+    margin: 20px 0;
+    color: #6dd5ed;
+}
+
+.details p {
+    margin: 8px 0;
+}
+
+/* Forecast Cards */
+.forecast-card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    width: 100%;
+    margin-top:5px;
+}
+
+.forecast-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0.9; /* Subtle transparency for cards */
+}
+
+.forecast-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Details Section */
+.details-section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 70px;
+}
+
+.details-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.details-section p {
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #city-input {
+        width: 200px;
+    }
+    .forecast-card {
+        width: 120px;
+    }
+    .navbar .nav-links {
+        display: block;
+        text-align: center;
+    }
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+}
+.wi{
+    font-size: 50px;
+}
